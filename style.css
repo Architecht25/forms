@@ -3,15 +3,11 @@
 @import url("components/form.css");
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  text-align: center;
+  background: #f4f4f4;
 }
 
 @media(max-width: 900px) {
