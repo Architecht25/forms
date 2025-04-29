@@ -1,6 +1,9 @@
 @import url("components/button.css");
 @import url("components/footer.css");
 @import url("components/form.css");
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
 
 body {
   display: flex;
@@ -10,14 +13,6 @@ body {
   background: #f4f4f4;
 }
 
-@media(max-width: 900px) {
-  .container {
-    width: 500px;
-  }
-}
-
-@media(max-width: 500px) {
-  .container {
-    width: 300px;
-  }
+a {
+  text-decoration: none;
 }
