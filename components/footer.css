@@ -21,3 +21,20 @@
 .footer .fas {
   color: #BF0F12;
 }
+/* Responsive : ajustement pour différentes tailles d'écran */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+}
+

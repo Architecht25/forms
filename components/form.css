@@ -63,7 +63,6 @@ select[type="text"] {
   font-size: 14px;
 }
 
-
 /* Responsive : ajustement pour différentes tailles d'écran */
 @media(max-width: 900px) {
   .container {
