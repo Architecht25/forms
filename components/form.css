@@ -1,5 +1,6 @@
 /* Conteneur principal de la page */
 .form-container {
+  flex: 1;
   display: flex;
   justify-content: center; /* Centrer horizontalement */
   align-items: center;     /* Centrer verticalement */
@@ -9,7 +10,6 @@
 
 /* Contenu de la page */
 .content {
-  flex: 1;
   display: flex;
   justify-content: center;  /* Centrer horizontalement */
   align-items: center;      /* Centrer verticalement */
@@ -19,10 +19,10 @@
 /* Style de la boîte contenant le formulaire */
 .form-wrapper {
   box-shadow: 0 0 20px rgba(49, 79, 211, 0.5);
-  max-width: 450px;
+  max-width: 350px;
   text-align: center;
   background: white;
-  padding: 20px;
+  padding: 20px 24px;
   border-radius: 12px;
 }
 
@@ -48,7 +48,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%; /* Prendre toute la largeur du formulaire */
+  width: 80%; /* Prendre toute la largeur du formulaire */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -56,7 +56,7 @@ input[type="password"] {
 }
 
 select[type="text"] {
-  width: 100%; /* Prendre toute la largeur du formulaire */
+  width: 85%; /* Prendre toute la largeur du formulaire */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
