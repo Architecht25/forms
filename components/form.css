@@ -55,6 +55,15 @@ input[type="password"] {
   font-size: 14px;
 }
 
+select[type="text"] {
+  width: 100%; /* Prendre toute la largeur du formulaire */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
 /* Responsive : ajustement pour différentes tailles d'écran */
 @media(max-width: 900px) {
   .container {

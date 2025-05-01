@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       button.textContent = 'Enjoy the ride!';
       messageBox.style.display = 'block';
-      sound.play();
+      // sound.play();
     });
   }
 });
