@@ -1,40 +1,29 @@
-/* Conteneur principal de la page */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assurer que la page prend toute la hauteur */
+}
+
+/* Conteneur du formulaire centré */
 .form-container {
-  flex: 1;
   display: flex;
   justify-content: center; /* Centrer horizontalement */
   align-items: center;     /* Centrer verticalement */
-  height: 100vh;           /* Assurer que la hauteur est 100% de la fenêtre */
+  flex: 1; /* Prendre tout l'espace disponible entre le header et footer */
   background-color: #f4f4f4; /* (optionnel) une couleur de fond pour mieux voir l'effet */
-}
-
-/* Contenu de la page */
-.content {
-  display: flex;
-  justify-content: center;  /* Centrer horizontalement */
-  align-items: center;      /* Centrer verticalement */
-  width: 100%;
+  padding: 0 16px;
 }
 
 /* Style de la boîte contenant le formulaire */
 .form-wrapper {
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 0 20px rgba(49, 79, 211, 0.5);
-  max-width: 350px;
   text-align: center;
   background: white;
-  padding: 20px 24px;
+  padding: 20px 16px;
   border-radius: 12px;
-}
-
-/* Style du titre */
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Formulaire */
-form {
-  width: 100%;
+  margin: 0 auto;
 }
 
 /* Style des labels */
@@ -48,7 +37,8 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 80%; /* Prendre toute la largeur du formulaire */
+  width: 100%; /* Prendre toute la largeur du formulaire */
+  box-sizing: border-box;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -56,7 +46,8 @@ input[type="password"] {
 }
 
 select[type="text"] {
-  width: 85%; /* Prendre toute la largeur du formulaire */
+  width: 100%; /* Prendre toute la largeur du formulaire */
+  box-sizing: border-box;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;

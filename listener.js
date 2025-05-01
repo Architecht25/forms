@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (button && messageBox) {
     button.addEventListener('click', () => {
-      button.textContent = 'at least you remain with a good sound 🎸';
+      button.textContent = 'At least you remain with a good sound 🎸';
       messageBox.style.display = 'block';
+      sound.load();
       sound.play();
     });
   }

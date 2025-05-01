@@ -7,48 +7,50 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="form-container">
-      <div class="content">
-          <div class="form-wrapper">
-            <form>
-              <h2>Subscription form</h2>
-              <label for="last name">Last name</label>
-              <input type="text" id="last name" last_name="last name" required>
+    <div class="page-wrapper">
+      <div class="form-container">
+        <div class="form-wrapper">
+          <form>
+            <h2>Subscription form</h2>
+            <label for="last name">Last name</label>
+            <input type="text" id="last name" last_name="last name" required>
 
-              <label for="first_name">First name</label>
-              <input type="text" id="first_name" last_name="last_name" required>
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" last_name="last_name" required>
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-              <label for="role">Role</label>
-              <select type="text" id="role" name="role" required>
-                <option value="backend">backend</option>
-                <option value="frontend">frontend</option>
-                <option value="DB architect">DB architect</option>
-                <option value="story teller & dev ops">story teller & DevOps</option>
-              </select>
+            <label for="role">Role</label>
+            <select type="text" id="role" name="role" required>
+              <option value="backend">backend</option>
+              <option value="frontend">frontend</option>
+              <option value="DB architect">DB architect</option>
+              <option value="story teller & dev ops">story teller & DevOps</option>
+            </select>
 
-              <button type="submit" id="clickme">Push the bottom 😁</button>
-            </form>
+            <button type="submit" id="clickme">Push the bottom 😁</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div id="message" class="hidden">Sorry guys, but i am waiting the next lesson on fetching to record your data into the DB 😁</div>
+
+      <audio id="audio" src="music/fight.mp3"></audio>
+
+      <div class="footer">
+        <div class="footer-content"></div>
+          <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="https://github.com/Architecht25" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/robinduparc/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>
+            <p>This website was coded with <i class="fas fa-heart"></i> during Le Wagon Bootcamp.</p>
           </div>
         </div>
-    </div>
-
-    <div id="message" class="hidden">Sorry guys, but i am waiting the next lesson on fetching to record your data into the DB 😁</div>
-
-    <audio id="audio" src="music/fight.mp3"></audio>
-
-    <div class="footer">
-      <div class="links">
-        <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-fw fa-github"></i></a>
-        <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
-        <p>This website was coded with <i class="fas fa-heart"></i> during Le Wagon Bootcamp.</p>
-
       </div>
     </div>
-    <script src="listener.js"></script>
-  </body>
+    <script src="listener.js" preload="auto"></script>
+  </div>
+</body>
 </html>
