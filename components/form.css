@@ -1,34 +1,61 @@
+/* Conteneur principal de la page */
 .form-container {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;     /* Centrer verticalement */
+  height: 100vh;           /* Assurer que la hauteur est 100% de la fenêtre */
+  background-color: #f4f4f4; /* (optionnel) une couleur de fond pour mieux voir l'effet */
 }
 
+/* Contenu de la page */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* Centrer horizontalement */
+  align-items: center;      /* Centrer verticalement */
+  width: 100%;
+}
+
+/* Style de la boîte contenant le formulaire */
+.form-wrapper {
+  box-shadow: 0 0 20px rgba(49, 79, 211, 0.5);
+  max-width: 450px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Style du titre */
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Formulaire */
+form {
+  width: 100%;
+}
+
+/* Style des labels */
 label {
   display: block;
   margin: 15px 0 5px;
   font-weight: bold;
 }
 
+/* Style des champs de saisie */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 50%;
+  width: 100%; /* Prendre toute la largeur du formulaire */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 14px;
 }
 
+/* Responsive : ajustement pour différentes tailles d'écran */
 @media(max-width: 900px) {
   .container {
     width: 700px;

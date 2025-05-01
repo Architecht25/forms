@@ -1,0 +1,17 @@
+#message {
+  display: none; /* Cache par défaut */
+  padding: 1em;
+  background: #eee;
+  margin-top: 1em;
+  text-align: center;
+
+  /* Pour centrer le message dans la page */
+  position: fixed; /* Position fixe */
+  top: 50%; /* 50% du haut de la page */
+  left: 50%; /* 50% de la largeur de la page */
+  transform: translate(-50%, -50%); /* Décale de 50% de la largeur et de la hauteur de l'élément */
+
+  width: 300px; /* Largeur souhaitée de la boîte */
+  border-radius: 10px; /* Pour un effet arrondi */
+  border: 1px solid green ;
+}
