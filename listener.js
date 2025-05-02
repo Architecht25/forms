@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       button.textContent = 'At least you remain with a good sound 🎸';
       messageBox.style.display = 'block';
-      sound.load();
-      sound.play();
+      sound.play().catch((error) => {
+        console.error("Audio play failed:", error);
+      });
     });
   }
 });

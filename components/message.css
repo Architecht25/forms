@@ -11,24 +11,16 @@
   left: 50%; /* 50% de la largeur de la page */
   transform: translate(-50%, -50%); /* Décale de 50% de la largeur et de la hauteur de l'élément */
 
-  width: 300px; /* Largeur souhaitée de la boîte */
+  width:80%;
+  max-width: 300px; /* Largeur souhaitée de la boîte */
   border-radius: 10px; /* Pour un effet arrondi */
   border: 1px solid green ;
 }
 
-/* Responsive : ajustement pour différentes tailles d'écran */
-@media(max-width: 900px) {
-  .container {
-    width: 700px;
-  }
-}
-@media(max-width: 750px) {
-  .container {
-    width: 450px;
-  }
-}
-@media(max-width: 500px) {
-  .container {
-    width: 350px;
+@media (max-width: 600px) {
+  #message {
+    width: 90%; /* Prend plus de place sur les petits écrans pour plus de visibilité */
+    max-width: 100%; /* Ajuste au mieux la largeur */
+    font-size: 16px; /* Ajuste la taille de la police pour les petits écrans */
   }
 }

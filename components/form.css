@@ -1,7 +1,12 @@
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Assurer que la page prend toute la hauteur */
+  flex: 1;
+  align-items: center; /* centre horizontalement */
+  justify-content: space-between; /* espace entre le form et le footer */
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 /* Conteneur du formulaire centré */
@@ -9,9 +14,10 @@
   display: flex;
   justify-content: center; /* Centrer horizontalement */
   align-items: center;     /* Centrer verticalement */
-  flex: 1; /* Prendre tout l'espace disponible entre le header et footer */
+  flex-grow: 1; /* Prendre tout l'espace disponible entre le header et footer */
   background-color: #f4f4f4; /* (optionnel) une couleur de fond pour mieux voir l'effet */
   padding: 0 16px;
+  margin-bottom: 40px;
 }
 
 /* Style de la boîte contenant le formulaire */
